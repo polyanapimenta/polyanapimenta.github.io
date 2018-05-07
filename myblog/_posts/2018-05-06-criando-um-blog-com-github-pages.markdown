@@ -24,7 +24,7 @@ De início iremos utilizar o GitHub Pages, ele auxilia você a construir seu pr�
 
 O GitHub Pages oferece sites ilimitados para os seus projetos e apenas um site por conta ou organização portando o domínio `nome-usuario.github.io`
 
-# Primeiros Passos:
+# Parte 1:
 
 1) Criando e hospedando nosso site no [GitHub Pages][github-pages] (passos 1 .. 5)
 
@@ -44,6 +44,42 @@ Primeiramente faremos que o GitHub Pages cuide da parte de hospedar o nosso site
 
 + 1.5) Pronto! Site no ar com uma simples página index.html. Acesse pelo navegador sua url: `https://username.github.io` e veja.
 
+*Referência: [GitHub Pages][github-pages]* 
+
+# Parte 2:
+
+Após ter toda a Parte 1 feita, vamos abrir o terminal no caminho onde se encontra o seu repositório `cd username.github.io/` criado anteriormente em sua máquina, pois iremos inatalar o Jekyll, o cara que gera a estrutura do seu blog!
+
+**Requisitos antes de instalar o Jekyll:**
+
+- Ter intalado o [Ruby][ruby] versão 2.2.5 ou superior na sua máquina `ruby -v`
+- Ter instalado o [RubyGem][rubygem] na sua máquina `gem -v`
+
+**Intalar o Jekyll e o Bundler através do RubyGem (a intalação do Jekyll e do Bundler só é feita uma vez, não é necessário instalar outra vez quando for criar novos projetos):**
+
+- No terminal rodar: `sudo gem install jekyll bundler` 
+
+para verificar se o jekyll foi intslado corretamente, rode: `jekyll -v`
+
+`bundler` é uma gema que gerencia outras gemas de Ruby. Ele garante que suas gemas e versões de `gem` sejam compatíveis uma com as outras e que você tenha todas as dependências necessárias que cada `gem` requer.
+
+**Criando a estrutura do seu blog com o jekyll**
+
+- `jekyll new myblog` myblog pode ser qualquer nome que você queira dar ao seu projeto/blog, pois esta será a pasta principal da estrutura do jekyll, onde contém toda a informação de arquivos que estruturam o seu novo blog.
+
+- Entre na pasta criada acima `cd myblog`
+
+- Rode: `bundle exec jekyll serve` para bildar/construir o site no servidor para visualização
+
+Obs. Quando você executa `bundle exec jekyll serve`, o Bundler usa as gemas e versões conforme especificado `Gemfile.lock` para garantir que o seu site Jekyll seja construído sem conflitos de compatibilidade ou dependência.
+
+- Pronto, agora acesse no seu browser `http://localhost:4000` ou  `http://127.0.0.1:4000` para ver rodando o seu blog em seu servidor local! 
+
+*Referência: [Jekyll QuickStart][jekyll-quickstart]*
+
 [github-pages]: https://pages.github.com/
 [github]: https://github.com/new
 [git-bash]: https://git-scm.com/downloads
+[ruby]: https://www.ruby-lang.org/en/documentation/installation/
+[rubygem]: https://rubygems.org/pages/download
+[jekyll-quickstart]: https://jekyllrb.com/docs/quickstart/
