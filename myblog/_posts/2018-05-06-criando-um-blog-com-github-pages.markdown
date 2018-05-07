@@ -4,7 +4,7 @@ title:  "Criando um Blog Usando GitHub Pages e Jekyll!"
 date:   2018-05-06 16:43:02 -0300
 categories: jekyll github
 ---
-*Tempo médio de duração: 5 minutos*
+*Tempo médio: 5 minutos*
 
 # Introdução:
 
