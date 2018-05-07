@@ -4,8 +4,9 @@ title:  "Criando um Blog Usando GitHub Pages e Jekyll!"
 date:   2018-05-06 16:43:02 -0300
 categories: jekyll github
 ---
+*Tempo médio de duração: 5 minutos*
 
-Introdução:
+# Introdução:
 
 O Jekyll nada mais é do que um simples gerador de sites, ou seja, ele gera as páginas estáticas do seu site, também possui dentro de sua engine a capacidade de reconhecer a estrutura de um blog, onde ele "compila" todo o seu conteúdo, textos, posts e etc, e como resultado final, gera o seu site estruturado. 
 
