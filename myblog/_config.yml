@@ -14,6 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Polyana Pimenta
+first_name: Polyana
+last_name: Pimenta
 email: polyana.pimenta@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Meu blog pessoal para estudar, codificar e aprender novas tecnologias  
@@ -22,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Por Polyana Pimenta
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://polyanapimenta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+linkedin_username: polyanapimenta
 github_username:  polyanapimenta
 
 # Build settings
@@ -30,6 +32,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+port: 1236
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
