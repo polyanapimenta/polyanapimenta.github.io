@@ -1,1 +1,4 @@
-portifolio/
+_site
+.sass-cache
+.jekyll-metadata
+portifolio
