@@ -12,7 +12,7 @@ layout: default
         {% capture site.categories %}{{ category | first }}{% endcapture %}
       <div class="post-items">
 
-        <a href="{{ post.url | relative_url }}">
+        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h2 class="post-header">{{ post.title }}</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, voluptatibus molestiae consectetur vitae fugit incidunt impedit tempore amet. A aut animi numquam laudantium sed distinctio atque dolores quia quasi odit?</p>
         </a>
