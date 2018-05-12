@@ -13,15 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Polyana Pimenta
+title: Blog - Polyana Pimenta
 first_name: Polyana
 last_name: Pimenta
-email: polyana.pimenta@gmail.com
+email: polyanapimenta@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Meu blog pessoal para estudar, codificar e aprender novas tecnologias  
   sobre o desenvolvimento de software. Tudo organizado em um blog para 
   acesso livre a qualquer pessoa e a mim mesma no futuro. 
-  Por Polyana Pimenta
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://polyanapimenta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: polyanapimenta
@@ -32,7 +31,13 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-port: 1236
+permalink: /:categories/:title
+
+#Links do menu
+url-1: /curriculo/
+url-2: /tags/
+url-3: /about/
+url-4: /arquivos/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

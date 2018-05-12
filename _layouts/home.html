@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- Conteudo index -->
+<div class="container">   
+  <div class="wrapper">
+    {% if site.posts.size <= 1 %}
+      <p>Não existe nenhum post criado ainda! :(</p>
+    {% else %}
+      {% for post in site.posts %}
+        {% capture site.categories %}{{ category | first }}{% endcapture %}
+      <div class="post-items">
+
+        <a href="{{ post.url | relative_url }}">
+          <h2 class="post-header">{{ post.title }}</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, voluptatibus molestiae consectetur vitae fugit incidunt impedit tempore amet. A aut animi numquam laudantium sed distinctio atque dolores quia quasi odit?</p>
+        </a>
+
+        <span class="post-icons">
+          {% include icons/icon-calendar.html %} 
+          <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
+          <a href="/tags/{{ category_name }}">{% include icons/icon-hashtag.html %} {{ post.categories }}</a>
+        </span>
+
+      </div>
+      {% endfor %}
+      <p class="rss-subscribe">Inscreva-se <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {% endif %}
+  </div>
+</div>
+<!-- fim conteudo index -->

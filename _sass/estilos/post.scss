@@ -1,0 +1,115 @@
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 20px;
+}
+.post-header, 
+.post-title, 
+.page-item-list {
+  text-transform: capitalize;
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 5px;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-top: 70px;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  padding-top: 3px;
+  padding-left: 3px;
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+// Customizacao Pag. /arquivos/
+
+.post-items ul li{
+  list-style-type: none;
+}
+.post-items ul .post-header{
+  font-weight: 400;
+}
+.post-items ul hr {
+  margin-bottom: 40px;
+  border: 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+
+// Customizacao Pag. home
+
+.post-header{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.post-icons {
+  font-size: 21px;
+}
+.post-icons svg {
+  width: 20px;
+}
+
+.post-items{
+  width: 760px;
+  padding-bottom: 35px;
+}
+.post-items a,  .post-items a:hover{
+  text-decoration: none;
+}
+.post-items a, .post-icons{
+  color: rgb(24, 24, 24);
+}

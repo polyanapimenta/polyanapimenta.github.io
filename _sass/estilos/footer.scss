@@ -1,0 +1,92 @@
+footer {
+    width: 100%;
+    border-top: 1px solid $grey-color-light;
+    padding-top: 50px;
+}
+
+footer .container {
+    left:   100%;
+    margin-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color: $grey-color;
+}
+
+footer .col-1 {
+    width: 300px;
+    text-align: right;
+}
+
+footer .col-2 {
+    width: 360px;
+    margin: 0 auto;
+}
+
+footer .col-2 span svg{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 49px;
+    right: 10px;
+}
+
+footer .col-3 {
+    width: 300px;
+}
+
+footer .col-4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .col-4 p{
+    font-size: 12px;
+}
+
+footer .col-4 span svg{
+    width: 14px;
+    height: 14px;
+    padding: 0 3px;
+}
+footer .profile {
+    width: 150px;
+    height: 150px;
+}
+
+footer .svg-icon{   
+    float: right;  
+    width: 200px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+footer .svg-icon svg{
+    width: 32px;
+    height: 25px; 
+    fill: #{$grey-color};   
+    padding-left: 40px;
+}
+
+.footer-heading {
+    @include relative-font-size(1.125);
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+}
+
+.contact-list {
+    li + li {
+      padding-top: 5px;
+    }
+}
+
+.descricao {
+    padding-top: 15px;
+}

@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Criando um Blog Usando GitHub Pages e Jekyll!"
-date:   2018-05-06 16:43:02 -0300
-categories: jekyll github
+date:   18-05-10 16:43:02 -0300
+tempo-leitura: Tempo médio 5 minutos
+categories: github
 ---
-*Tempo médio: 5 minutos*
 
 # Introdução:
 
