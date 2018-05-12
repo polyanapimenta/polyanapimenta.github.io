@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="container">
+  <div class="wrapper">
+    <header class="post-header">
+      <h1 class="post-title">
+        {% if page.url == site.url-2 %}
+          {% include icons/icon-hashtag.html %} {{ page.title | escape }}
+        {% elsif page.url == site.url-3 %}
+        {% include icons/icon-user-dark.html %} {{ page.title | escape }}
+        {% elsif page.url == site.url-4 %}
+          {% include icons/icon-arquivo-2.html %} {{ page.title | escape }}
+        {% else %}
+          {{ page.title | escape }}
+        {% endif %}
+        </h1>
+        {% if page.posts-size %}
+          <p class ="post-meta">{{ site.posts.size }} Posts Listados</p>
+        {% endif %}
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</article>
