@@ -7,6 +7,8 @@ ATENÇÃO: Algumas páginas ainda podem estar sendo construídas, não se preocu
 
 :)
 
+[polyanapimenta.github.io][blog]
+
 [blog]: https://polyanapimenta.github.io
 [jekyll-quickstart]: https://jekyllrb.com/docs/quickstart/
 [github-pages]: https://pages.github.com/
