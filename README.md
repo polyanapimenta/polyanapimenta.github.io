@@ -1,7 +1,11 @@
-Acesse o meu [Blog!][blog], foi totalmente codificado por mim utilizando 
+Acesse o meu [Blog!][blog], está sendo totalmente codificado por mim utilizando 
 [Jekyll][jekyll-quickstart] e o maravilhoso [GitHub][github-pages] Pages :)
 
 [polyanapimenta.github.io][blog]
+
+ATENÇÃO: Algumas páginas ainda podem estar sendo construídas, não se preocupe caso encontrar algo que não apresente corretamente o seu apropriado funcionamento, pois o blog ainda está em fase de construção!
+
+:)
 
 [blog]: https://polyanapimenta.github.io
 [jekyll-quickstart]: https://jekyllrb.com/docs/quickstart/
