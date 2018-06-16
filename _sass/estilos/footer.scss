@@ -2,13 +2,14 @@ footer {
     width: 100%;
     border-top: 1px solid $grey-color-light;
     padding-top: 50px;
+    font-size: 16.5px;
 }
 
 footer .container {
     left:   100%;
     margin-top: 40px;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: $grey-color;
 }
 
@@ -40,7 +41,8 @@ footer .col-4{
 }
 
 footer .col-4 p{
-    font-size: 12px;
+    font-size: 15px;
+    color: $grey-color;
 }
 
 footer .col-4 span svg{
@@ -66,7 +68,7 @@ footer .svg-icon svg{
     width: 32px;
     height: 25px; 
     fill: #{$grey-color};   
-    padding-left: 40px;
+    padding-left: 43px;
 }
 
 .footer-heading {

@@ -11,8 +11,9 @@ layout: default
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = date_to_string | default: "%d/%m/%Y" -%}
             {{ page.date | date: date_format }}
+            <br>
           </time>
-          <br>
+          
           <span>{{ page.tempo-leitura }}</span>
           {%- if page.author -%}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>

@@ -14,12 +14,13 @@ header .container {
 .logo {
     font-family: $font-logo;
     line-height: 0.9; 
-    margin: 3.5px 25px 0 0;
+    margin: 4.5px 25px 0 0;
     height: 50px;
 }
 
 .logo h1 {
     margin-bottom: 0;
+    font-size: 30px;
 }
 
 .logo span:first-child {
@@ -63,7 +64,7 @@ ul.menu ul{
 /* Configurações nivel 1*/
 ul.menu{ 
     float:left; 
-    font-size:15px; 
+    font-size:16px;
 }
 
 .menu li{ 

@@ -3,49 +3,55 @@
  */
 .post-header {
   margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 30px; // customização pag. home
 }
-.post-header, 
-.post-title, 
-.page-item-list {
+
+// .post-header,
+.page-item-list, 
+.post-meta {
   text-transform: capitalize;
 }
 
+.post-header,
 .post-title {
-  @include relative-font-size(2.625);
+  text-transform: uppercase;
+}
+
+.post-title {
+  margin-bottom: 8px;
   letter-spacing: -1px;
   line-height: 1;
-  margin-bottom: 5px;
+  font-size: 35px;
+  font-weight: 600;
 
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
+  // text-decoration: underline;
 }
 
 .post-content {
-  margin-top: 70px;
+  padding-top: 10px;
 
   h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
-    }
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-transform: uppercase;
   }
 
   h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
-    }
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
   }
 
   h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
-    }
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
@@ -75,7 +81,6 @@
 }
 
 // Customizacao Pag. /arquivos/
-
 .post-items ul li{
   list-style-type: none;
 }
@@ -83,17 +88,16 @@
   font-weight: 400;
 }
 .post-items ul hr {
-  margin-bottom: 40px;
+  margin-bottom: 11px;
   border: 0;
   border-bottom: 1px solid rgb(228, 228, 228);
 }
 
 
 // Customizacao Pag. home
-
-.post-header{
-  font-size: 30px;
-  margin-bottom: 15px;
+a .post-header:hover {
+  // text-decoration: underline;
+  color: rgba(#000, 0.76);
 }
 
 .post-icons {

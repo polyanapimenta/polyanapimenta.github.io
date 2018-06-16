@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Arquivos do Site
+title: "Arquivos do Site"
 permalink: /arquivos/
 posts-size: true
 ---
 
 <div class="post-items">
-    <br>
     {% if site.posts %}
         <ul>
             {% for post in site.posts %}

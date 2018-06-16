@@ -6,7 +6,7 @@ tempo-leitura: Tempo médio 5 minutos
 categories: github
 ---
 
-# Introdução:
+## Introdução:
 
 O Jekyll nada mais é do que um simples gerador de sites, ou seja, ele gera as páginas estáticas do seu site, também possui dentro de sua engine a capacidade de reconhecer a estrutura de um blog, onde ele "compila" todo o seu conteúdo, textos, posts e etc, e como resultado final, gera o seu site estruturado. 
 
@@ -25,7 +25,7 @@ De início iremos utilizar o GitHub Pages, ele auxilia você a construir seu pr�
 
 O GitHub Pages oferece sites ilimitados para os seus projetos e apenas um site por conta ou organização portando o domínio `nome-usuario.github.io`
 
-# Parte 1:
+## Parte 1:
 
 1) Criando e hospedando nosso site no [GitHub Pages][github-pages] (passos 1 .. 5)
 
@@ -47,16 +47,17 @@ Primeiramente faremos que o GitHub Pages cuide da parte de hospedar o nosso site
 
 *Referência: [GitHub Pages][github-pages]* 
 
-# Parte 2:
+## Parte 2:
 
 Após ter toda a Parte 1 feita, vamos abrir o terminal no caminho onde se encontra o seu repositório `cd username.github.io/` criado anteriormente em sua máquina, pois iremos inatalar o Jekyll, o cara que gera a estrutura do seu blog!
 
-**Requisitos antes de instalar o Jekyll:**
+### Requisitos antes de instalar o Jekyll:
 
 - Ter intalado o [Ruby][ruby] versão 2.2.5 ou superior na sua máquina `ruby -v`
 - Ter instalado o [RubyGem][rubygem] na sua máquina `gem -v`
 
-**Intalar o Jekyll e o Bundler através do RubyGem (a intalação do Jekyll e do Bundler só é feita uma vez, não é necessário instalar outra vez quando for criar novos projetos):**
+#### Intalar o Jekyll e o Bundler através do RubyGem:
+**ATENÇÃO:** A intalação do Jekyll e do Bundler só é feita uma vez, não é necessário instalar outra vez quando for criar novos projetos
 
 - No terminal rodar: `sudo gem install jekyll bundler` 
 
@@ -64,7 +65,7 @@ para verificar se o jekyll foi intslado corretamente, rode: `jekyll -v`
 
 `bundler` é uma gema que gerencia outras gemas de Ruby. Ele garante que suas gemas e versões de `gem` sejam compatíveis uma com as outras e que você tenha todas as dependências necessárias que cada `gem` requer.
 
-**Criando a estrutura do seu blog com o jekyll**
+### Criando a estrutura do seu blog com o jekyll
 
 - `jekyll new myblog` myblog pode ser qualquer nome que você queira dar ao seu projeto/blog, pois esta será a pasta principal da estrutura do jekyll, onde contém toda a informação de arquivos que estruturam o seu novo blog.
 
