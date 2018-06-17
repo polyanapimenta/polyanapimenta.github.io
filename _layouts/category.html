@@ -4,7 +4,7 @@ layout: default
 <div class="container">
         <div class="wrapper">
             {%- assign date_format = date_to_string | default: "%d/%m/%Y" -%}
-            <h2 class="post-title">{{ page.category }}</h2>
+            <h2 class="post-title">< {{ page.category }} /> Listagem de posts</h2>
             <div class="post-items">
                 {% for post in site.posts %}
                     {% if post.category == page.category %}
