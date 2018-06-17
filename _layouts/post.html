@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <div class="container">
@@ -14,23 +15,24 @@ layout: default
             <br>
           </time>
           
-          <span>{{ page.tempo-leitura }}</span>
+          <span>{{ page.reading-time }}</span>
           {%- if page.author -%}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
           {%- endif -%}
         </p>
       </header>
 
-      <div class="post-content" itemprop="articleBody">
+      <div class="post-content setup" itemprop="articleBody">
         {{ content }}
-      </div>
-
-      {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
-      {%- endif -%}
-
+      </div> 
       <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
     </article>
-    <a class="post-icons" href="{{ site.url | escape }}" title="Voltar">{% include icons/icon-return.html %}</a>
+    <a class="post-icons voltar" href="{{ site.url | escape }}" title="Voltar para Home"><span>voltar</span>{% include icons/icon-return.html %}</a>
+    <div class="post-content disqus">
+      <p>Deixe seu comentário sobre este post! :D</p>
+      {% if page.comments != false %}
+        {% include disqus_comments.html %}
+      {% endif %}
+    </div>
   </div>
 </div>

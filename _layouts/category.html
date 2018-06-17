@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container">
+        <div class="wrapper">
+            {%- assign date_format = date_to_string | default: "%d/%m/%Y" -%}
+            <h2 class="post-title">{{ page.category }}</h2>
+            <div class="post-items">
+                {% for post in site.posts %}
+                    {% if post.category == page.category %}
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                            <h3 class="post-header">{{ post.title }}</h3>
+                            <p>{{ post.description }}</p>
+                            <span class="post-icons">
+                                {% include icons/icon-calendar.html %} 
+                                <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
+                            </span>
+                        </a>
+                    {% endif %}
+                {% endfor %} 
+            </div>
+        </div>
+    </div>

@@ -1,6 +1,17 @@
 /**
  * Posts
  */
+
+.disqus {
+  margin-top: 60px;
+}
+.disqus p{
+  font-size: 21.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(37, 190, 196);
+  margin-bottom: 28px;
+}
 .post-header {
   margin-bottom: 20px;
   margin-top: 40px;
@@ -92,12 +103,26 @@
   border: 0;
   border-bottom: 1px solid rgb(228, 228, 228);
 }
-
+.voltar span,
+.voltar:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+  
+}
+.voltar:hover {
+  color: rgba(#000, 0.7);
+}
 
 // Customizacao Pag. home
 a .post-header:hover {
   // text-decoration: underline;
   color: rgba(#000, 0.76);
+}
+
+.setup p:first-child {
+  margin-top: 50px;
 }
 
 .post-icons {

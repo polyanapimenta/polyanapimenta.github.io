@@ -8,25 +8,31 @@ layout: default
     {% if site.posts.size <= 1 %}
       <p>Não existe nenhum post criado ainda! :(</p>
     {% else %}
-      {% for post in site.posts %}
-        {% capture site.categories %}{{ category | first }}{% endcapture %}
-      <div class="post-items">
-
-        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-          <h2 class="post-header">{{ post.title }}</h2>
-          <p>
-              teste
-          </p>
-        </a>
-
-        <span class="post-icons">
-          {% include icons/icon-calendar.html %} 
-          <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
-          <a href="/tags/{{ category_name }}">{% include icons/icon-hashtag.html %} {{ post.categories }}</a>
-        </span>
-
-      </div>
+      
+      {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
       {% endfor %}
+
+        {% for post in site.posts %}
+          
+          <div class="post-items">
+
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+              <h2 class="post-header">{{ post.title }}</h2>
+              <p>
+                {{ post.description }}
+              </p>
+            </a>
+            <!-- category_name: {{ category_name }} -->
+            <span class="post-icons">
+              {% include icons/icon-calendar.html %} 
+              <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
+              <a href="{{ site.url-2 }}/{{ category_name }}">{% include icons/icon-hashtag.html %} {{ post.category }}</a>
+            </span>
+
+          </div>
+        {% endfor %}
+
       <p class="rss-subscribe">Inscreva-se <a href="{{ "/feed.xml" | relative_url }}" title="subscribe">via RSS</a></p>
     {% endif %}
   </div>
