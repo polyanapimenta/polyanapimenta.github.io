@@ -13,18 +13,24 @@
   margin-bottom: 28px;
 }
 .post-header {
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin-bottom: 10px;
+  // margin-top: 40px;
   font-size: 30px; // customização pag. home
 }
 
-// .post-header,
+
+.post-header,
 .page-item-list, 
 .post-meta {
   text-transform: capitalize;
 }
 
-.post-header,
+.title {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.title,
 .post-title {
   text-transform: uppercase;
 }
@@ -92,6 +98,9 @@
 }
 
 // Customizacao Pag. /arquivos/
+.post-items ul {
+  margin-top: 70px;
+}
 .post-items ul li{
   list-style-type: none;
 }
@@ -116,11 +125,6 @@
 }
 
 // Customizacao Pag. home
-a .post-header:hover {
-  // text-decoration: underline;
-  color: rgba(#000, 0.76);
-}
-
 .setup p:first-child {
   margin-top: 50px;
 }
@@ -135,7 +139,20 @@ a .post-header:hover {
 
 .post-items{
   width: 760px;
-  padding-bottom: 35px;
+}
+.post {
+  padding: 30px;
+  margin: 25px 0;
+  border: 1px solid transparent;
+}
+.post-items a p {
+  margin-bottom: 20px;
+}
+.post:hover {
+  transition: 0.74s;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 3px;
+  box-shadow: 1.5px 1.5px 10px rgba(#888, 0.6);
 }
 .post-items a,  .post-items a:hover{
   text-decoration: none;
