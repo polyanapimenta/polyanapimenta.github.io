@@ -27,7 +27,11 @@ comments: true
       </div> 
       <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
     </article>
-    <a class="post-icons voltar" href="{{ site.url | escape }}" title="Voltar para Home"><span>voltar</span>{% include icons/icon-return.html %}</a>
+   
+    <div class="page-return">
+      <a class="post-icons voltar" href="{{ site.url | escape }}" title="Voltar para Home"><span>voltar</span>{% include icons/icon-return.html %}</a>
+    </div>
+
     <div class="post-content disqus">
       <p>Deixe seu comentário sobre este post! :D</p>
       {% if page.comments != false %}

@@ -20,6 +20,6 @@ Se quiser saber mais sobre o setup básico de como criar um blog gratuitamete co
 
 É isso..  
 Aproveite o que for útil!  
-;)
+;D
 
 [clique aqui]:[http://polyanapimenta.github.io/github/criando-um-blog-com-github-pages]
