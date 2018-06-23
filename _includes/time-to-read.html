@@ -1,0 +1,14 @@
+<!-- 
+    cálculo leitura média:
+    130 palavras = 1 minuto
+    palavras / 130 = x minutos de leitura 
+-->
+{% assign palavras = content | number_of_words %}
+
+{% assign tempo_leitura = palavras | divided_by: 130 %}
+
+{% if palavras < 260 %}
+    Tempo médio: {{ tempo_leitura }} minuto.
+{% elsif  palavras > 260 %}
+    Tempo médio: {{ tempo_leitura }} minutos.
+{% endif %}
