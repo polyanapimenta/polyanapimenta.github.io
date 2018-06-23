@@ -29,7 +29,26 @@ comments: true
     </article>
    
     <div class="page-return">
-      <a class="post-icons voltar" href="{{ site.url | escape }}" title="Voltar para Home"><span>voltar</span>{% include icons/icon-return.html %}</a>
+      {% for post in site.posts reversed %}
+        {% if post.title != page.title and post.category == page.category and post.date >= page.date %} 
+          <a class="post-icons left" href="{{ site.url | append: post.url | escape }}" title="Ler Agora: {{post.title}}"><span>{% include icons/icon-left-arrow.html %}</span>anterior</a>
+          {% assign priv = true %}
+          {% break %}
+        {% else %}
+          {% assign priv = false %}
+        {% endif %}
+      {% endfor %}
+      
+      {% for post in site.posts %}
+        {% if post.title != page.title and post.category == page.category and post.date <= page.date %} 
+          <a class="post-icons next right" href="{{ site.url | append: post.url | escape }}" title="Ler Agora: {{post.title}}">próximo<span>{% include icons/icon-right-arrow.html %}</span></a>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      {% if priv == false %}
+        <a class="post-icons" href="{{ site.url | escape }}" title="Voltar para Home">voltar<span>{% include icons/icon-return.html %}</span></a>
+      {% endif %}
     </div>
 
     <div class="post-content disqus">

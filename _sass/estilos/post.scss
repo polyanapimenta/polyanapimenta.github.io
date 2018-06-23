@@ -112,19 +112,30 @@
   border: 0;
   border-bottom: 1px solid rgb(228, 228, 228);
 }
-.voltar span,
-.voltar:hover {
+.page-return a,
+.page-return a:hover {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   color: #000;
-  
 }
-.voltar:hover {
-  color: rgba(#000, 0.7);
-  font-size: 20.92px;
+.right span svg {
+  position: flex;
+  padding-left: 8px;
+  float: right;
+  width: 28px;
+  height: 28px;
 }
-
+.left span svg {
+  position: flex;
+  padding-right: 8px;
+  float: left;
+  width: 28px;
+  height: 28px;
+}
+.next {
+  float: right;
+}
 // Customizacao Pag. home
 .setup p:first-child {
   margin-top: 50px;

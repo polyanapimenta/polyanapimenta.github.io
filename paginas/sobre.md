@@ -16,7 +16,7 @@ Se quiser saber mais sobre o setup básico de como criar um blog gratuitamete co
 #### Se quiser entrar em contato comigo:  
 **LinkedIn:** <a href="https://br.linkedin.com/in/polyanapimenta" target="_blank">br.linkedin.com/in/polyanapimenta</a>  
 **E-mail:** <a href="mailto:polyana.pimenta@gmailcom">polyana.pimenta@gmail.com</a>  
-**Git Hub:** <a href="https://github.com/polyanapimenta" target="_blank">github.com/polyanapimenta</a>  
+**GitHub:** <a href="https://github.com/polyanapimenta" target="_blank">github.com/polyanapimenta</a>  
 
 É isso..  
 Aproveite o que for útil!  
