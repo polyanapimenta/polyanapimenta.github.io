@@ -3,7 +3,8 @@ layout: post
 title:  "bem vindo ao jekyll!"
 date:   17-04-08 15:25:02 -0300
 category: jekyll
-description: "O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de de Finibus Bonorum et Malorum de Cicero também foram reproduzidas abaixo em sua forma exata original das versões para o inglês da tradução feita por H"
+description: "Existem muitas variações disponíveis de passagens de Lor Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor passagens com humor passagens com humor passag aa passage."
+thumbnail-post: "/assets/gif/post-02.gif" 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -10,18 +10,23 @@ layout: default
     {% else %}
       {% for post in site.posts %}
         <div class="post-items post">
-          <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-            <h2 class="post-header">{{ post.title }}</h2>
-            <p>
-              {{ post.description }}
-            </p>
-          </a>
-          <!-- category_name: {{ category_name }} -->
-          <span class="post-icons">
-            {% include icons/icon-calendar.html %} 
-            <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
-            <a href="{{ site.url-2 }}/{{ post.category }}">{% include icons/icon-hashtag.html %} {{ post.category }}</a>
-          </span>
+          <div class="thumbnail-post">
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+              <img src="{{ post.thumbnail-post}}" alt="{{ post.category }}">
+            </a>
+          </div>
+
+          <div class="box-items">
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                <h2 class="post-header">{{ post.title }}</h2>
+                <p>{{ post.description }}</p>
+              </a>
+            <span class="post-icons">
+              {% include icons/icon-calendar.html %} 
+              <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
+              <a href="{{ site.url-2 }}/{{ post.category }}">{% include icons/icon-hashtag.html %} {{ post.category }}</a>
+            </span>
+        </div>
         </div>
       {% endfor %}
     {% endif %}

@@ -3,7 +3,8 @@ layout: post
 title:  "Criando um Blog Usando GitHub Pages e Jekyll!"
 date:   18-05-10 16:43:02 -0300
 category: github
-description: "Aprenda a criar passo a passo um blog pessoal utilizando as ferramentas gratuitas que o GitHub oferece para a comunidade de desenvolvedores. Gere inúmeras páginas de posts facilmente, tendo comentários associados a todas as suas postagens e opção de compartilhamento com as redes sociais."
+description: "Aprenda a criar passo a passo um blog pessoal utilizando as ferramentas gratuitas que o GitHub oferece para a comunidade de desenvolvedores. Gere inúmeras páginas de posts facilmente, tendo comentários associados a todas as suas postagens e opção de compartilhamento com as redes sociais!"
+thumbnail-post: "/assets/gif/post-02.gif" 
 ---
 
 ## Introdução:

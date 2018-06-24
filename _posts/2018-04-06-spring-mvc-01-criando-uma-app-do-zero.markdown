@@ -3,7 +3,8 @@ layout: post
 title:  "Spring MVC 01 - criando uma app do zero!"
 date:   18-04-06 15:25:02 -0300
 category: java
-description: "Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes."
+description: "Existem muitas variações disponíveis de passagens de Lor Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor passagens com humor passagens com humor passag aa passage."
+thumbnail-post: "/assets/gif/post-02.gif" 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
