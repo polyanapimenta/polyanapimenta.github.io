@@ -34,7 +34,8 @@ body {
 }
 
 .box-items{
-    width: 450px;
+    padding: 25px;
+    width: 440px;
     float: right;
 }
 .box-items h2 {
@@ -45,11 +46,9 @@ body {
 .thumbnail-post {
     border: 1px solid rgb(221, 221, 221);
 }
-.thumbnail-post, 
+.thumbnail-post,
 .thumbnail-post img{
     display: inline-block;
-    width: 250px;
-    height: 250px;
+    width: 265px;
+    height: 265px;
 }
-
-
