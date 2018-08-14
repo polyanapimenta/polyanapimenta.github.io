@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Conteudo index -->
-<div class="container">   
+<div class="container">
   <div class="wrapper">
     {% if site.posts.size <= 1 %}
       <p>Não existe nenhum post criado ainda! :(</p>
@@ -22,14 +22,17 @@ layout: default
                 <p>{{ post.description }}</p>
               </a>
             <span class="post-icons">
-              {% include icons/icon-calendar.html %} 
-              <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
+              {% include icons/icon-calendar.html %}
+              <span class="date">{{ post.date | date: "%d/%m/%y" }}</span>
               <a href="{{ site.url-2 }}/{{ post.category }}">{% include icons/icon-hashtag.html %} {{ post.category }}</a>
             </span>
         </div>
         </div>
       {% endfor %}
     {% endif %}
+
+    <div id="more-posts" title="Mais Posts">{% include icons/up.html %}</div>
+
     <p class="rss-subscribe">Inscreva-se <a href="{{ "/feed.xml" | relative_url }}" title="subscribe">via RSS</a></p>
   </div>
 </div>

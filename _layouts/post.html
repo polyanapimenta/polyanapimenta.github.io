@@ -6,27 +6,29 @@ comments: true
 <div class="container">
   <div class="wrapper">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
+      <div class="post-header header-pages">
         <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
         <p class="post-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = date_to_string | default: "%d/%m/%Y" -%}
+            {%- assign date_format = date_to_string | default: "%d / %m / %Y" -%}
             {{ page.date | date: date_format }}
             <br>
           </time>
-          <span>{% include time-to-read.html %}</span>
+          <span>
+              {% include time-to-read.html %}
+          </span>
           {%- if page.author -%}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
           {%- endif -%}
         </p>
-      </header>
+      </div>
 
       <div class="post-content setup" itemprop="articleBody">
         {{ content }}
-      </div> 
+      </div>
       <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
     </article>
-   
+
     <div class="page-return">{% include post-pagination.html %}</div>
 
     <div class="post-content disqus">

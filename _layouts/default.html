@@ -7,10 +7,12 @@
   <title>{% if page.title %} {{ page.title }} |  {{ site.title }} {% else %} {{ site.title }} {% endif%}</title>
   <link rel="stylesheet" href="../assets/main.css">
 </head>
-<body>
+<body class="#TOP">
   {% include header.html %}
+  <div id="btn-scroll">{% include icons/up-3.html %}</div>
   {{ content }}
   {% include footer.html %}
   <script id="dsq-count-scr" src="//polyanapimenta-github-io.disqus.com/count.js" async></script>
+  <script type="text/javascript" src="../scripts/master.js"></script>
 </body>
 </html>

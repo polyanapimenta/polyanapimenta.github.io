@@ -5,20 +5,20 @@ layout: default
         <div class="wrapper">
             {%- assign date_format = date_to_string | default: "%d/%m/%Y" -%}
             <h2 class="post-title">< {{ page.category }} /> <span class="title">Listagem de posts</span></h2>
-            
+
             {% for post in site.posts %}
                 {% if post.category == page.category %}
-                    <div class="post-items post">
+                    <div class="post-items post post-list">
                         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
                             <h3 class="post-header">{{ post.title }}</h3>
                             <p>{{ post.description }}</p>
                             <span class="post-icons">
-                                {% include icons/icon-calendar.html %} 
-                                <span class="date">{{ post.date | date: "%d/%m/%y" }}</span> 
+                                {% include icons/icon-calendar.html %}
+                                <span class="date">{{ post.date | date: "%d/%m/%y" }}</span>
                             </span>
                         </a>
                     </div>
                 {% endif %}
-            {% endfor %} 
+            {% endfor %}
         </div>
     </div>

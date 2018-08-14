@@ -1,7 +1,9 @@
 footer {
+    margin-top: -120px;
     width: 100%;
-    border-top: 1px solid $grey-color-light;
-    padding-top: 50px;
+    background-color: #330066;
+    border-top: 1px solid #45B3BF;
+    padding-top: 40px;
     font-size: 16.5px;
 }
 
@@ -9,8 +11,8 @@ footer .container {
     left:   100%;
     margin-top: 40px;
     margin: 0 auto;
-    padding-bottom: 30px;
-    color: $grey-color;
+    padding-bottom: 20px;
+    color: $footer-color;
 }
 
 footer .col-1 {
@@ -27,8 +29,9 @@ footer .col-2 span svg{
     width: 50px;
     height: 50px;
     position: relative;
-    bottom: 49px;
+    bottom: 47px;
     right: 10px;
+    fill: #FFC8CD;
 }
 
 footer .col-3 {
@@ -41,24 +44,26 @@ footer .col-4{
 }
 
 footer .col-4 p{
-    font-size: 15px;
-    color: $grey-color;
+    font-size: 14px;
+    color: $footer-color;
+    margin-bottom: 0;
 }
 
 footer .col-4 span svg{
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     padding: 0 3px;
 }
+
 footer .profile {
     width: 150px;
     height: 150px;
 }
 
-footer .svg-icon{   
-    float: right;  
+footer .svg-icon{
+    float: right;
     width: 200px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -66,14 +71,14 @@ footer .svg-icon{
 
 footer .svg-icon svg{
     width: 32px;
-    height: 25px; 
-    fill: #{$grey-color};   
+    height: 25px;
+    fill: yellow;
     padding-left: 43px;
 }
 
 .footer-heading {
     @include relative-font-size(1.125);
-    color: #000;
+    color: $text-color-default;
     margin-bottom: 10px;
     margin-top: 15px;
 }
@@ -86,6 +91,9 @@ footer .svg-icon svg{
 .contact-list {
     li + li {
       padding-top: 5px;
+    }
+    a {
+      color: #61FFB3;
     }
 }
 

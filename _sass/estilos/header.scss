@@ -1,19 +1,28 @@
 @import "fonts";
 
-// variaveis
-$header-color: #fff;
-
 header {
     width: 100%;
-    height: 60px;
-    background-color: $header-color;
+    height: 500px;
 }
 header .container {
     height: 60px;
+    margin-top: 10px;
 }
+
+header hr {
+    display: block;
+    // margin-top: 0.5em;
+    // margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.7px;
+    border-color: $default-color;
+}
+
 .logo {
     font-family: $font-logo;
-    line-height: 0.9; 
+    line-height: 0.9;
     margin: 4.5px 25px 0 0;
     height: 50px;
 }
@@ -29,7 +38,7 @@ header .container {
 
 .logo a, .logo a:hover {
     text-decoration: none;
-    color: #25AE88;
+    color: $logo;
 }
 
 
@@ -49,61 +58,64 @@ nav ul li {
 nav ul li a svg{
     width: 32px;
     height: 32px;
-    fill: $grey-color;
+    fill: $header-icons;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 
 //menu dropdown
-ul.menu ul{ 
-    position:absolute; 
-    display:none; 
+ul.menu ul{
+    position:absolute;
+    display:none;
 }
- 
+
 /* Configurações nivel 1*/
-ul.menu{ 
-    float:left; 
+ul.menu{
+    float:left;
     font-size:16px;
 }
 
-.menu li{ 
-    float:left; 
-    width:auto; 
+.menu li{
+    float:left;
+    width:auto;
     position:relative;
 }
 
-.menu li a{ 
-    display:block; 
-    line-height: 45px; 
-    height: 45px; 
-    float:left; 
-    transition:all 0.1s linear; 
+.menu li a{
+    display:block;
+    line-height: 45px;
+    height: 45px;
+    float:left;
+    transition:all 0.1s linear;
 }
- 
+
 /* Configurações nivel 2*/
-.menu li:hover > ul.submenu-1{ 
-    display:block; 
-    top: 47px; 
-    left:0; 
-    border-radius:0 0 6px 6px;   
+.menu li:hover > ul.submenu-1{
+    display:block;
+    top: 46px;
+    left:0;
+    border: 0.5px solid $default-color;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px rgba($default-color, 0.6);
+    background-color: $background-color;
 }
-.menu ul.submenu-1 a{  
+.menu ul.submenu-1 a{
     margin: 0;
     padding: 0 20px;
     white-space: nowrap;
-    color:#000;
+    color: $default-color;
 }
- 
+
 /*Configurações de cores*/
- 
+
 /*nivel 1*/
-.menu li:hover > a{ 
-    color:rgb(31, 31, 31);
+.menu li:hover > a{
+    // color:rgb(31, 31, 31);
 }
- 
+
 /*nivel 2*/
-.submenu-1{ 
+.submenu-1{
     border:1.3px solid #999;
     background-color: $header-color;
 }
@@ -115,20 +127,27 @@ ul.menu{
 .busca input {
     width: 580px;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 16px;
     border: none;
+    background-color: $background-color;
 
-    border: 1.7px solid rgb(233, 233, 230);
+
+    border: 1px solid #7F00FF;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .busca input[type="text"] {
-    padding-left: 10px;
-    text-transform: capitalize;
+    padding-left: 15px;
+    text-transform: uppercase;
     font-size: 16px;
     font-family: $font-site;
+}
+
+::-webkit-input-placeholder,
+.busca input[type="text"]{
+  color: $text-color-default;
 }
 
 /**
@@ -138,11 +157,11 @@ ul.menu{
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
-  
+
     // Positioning context for the mobile navigation icon
     position: relative;
   }
-  
+
   .site-title {
     @include relative-font-size(1.625);
     font-weight: 300;
@@ -150,13 +169,13 @@ ul.menu{
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-  
+
     &,
     &:visited {
       color: $grey-color-dark;
     }
   }
-  
+
 .site-nav {
     float: right;
     line-height: $base-line-height * $base-font-size * 2.25;
@@ -178,7 +197,7 @@ ul.menu{
             margin-right: 20px;
         }
     }
-    
+
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
@@ -207,7 +226,7 @@ ul.menu{
             text-align: center;
 
             > svg {
-                fill: $grey-color-dark;
+                fill: $header-icons;
             }
         }
 

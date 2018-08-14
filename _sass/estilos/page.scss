@@ -16,25 +16,49 @@
 .post-title svg {
   width: 33.5px;
   padding-right: 10px;
+  fill: $default-color;
 }
+
+.tag-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .tag-link a,  .tag-link a:hover{
   text-decoration: none;
+  width: 185px;
+  height: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.tag-link a:hover {
+  box-shadow: 0 0 7px $text-color;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 2.4s;
+  transition-timing-function: ease-in-out;
+  transform: rotate(360deg);
 }
 
 #img-tags {
-  width: 250px;
+  width: 185px;
 }
 
 // customizacao pag. /arquivos/
 .page-item-list {
   padding-left: 100px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   font-size: 18px;
-  
+
 }
 .page-item-list a {
   font-size: 21px;
-  color: #25AE88 !important;
+  color: $text-color-default !important;
 }
 .page-item-list span {
   font-size: 28px;
@@ -42,5 +66,9 @@
   color: rgb(228, 228, 228);
 }
 .page-return {
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.img-bkg{
+    transform: rotateY(180deg);
 }

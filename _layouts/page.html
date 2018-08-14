@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
   <div class="wrapper">
-    <header class="post-header">
+    <div class="post-header header-pages">
       <h1 class="post-title">
         {% if page.url == site.url-2 %}
           {% include icons/icon-hashtag.html %} {{ page.title | escape }}
@@ -18,13 +18,13 @@ layout: default
         {% if page.posts-size %}
           <p class ="post-meta">{{ site.posts.size }} Posts Listados</p>
         {% endif %}
-    </header>
+    </div>
 
     <div class="post-content">
       {{ content }}
     </div>
     <div class="page-return">
-      <a class="post-icons voltar" href="{{ site.url | escape }}" title="Voltar para Home"><span>voltar</span>{% include icons/icon-return.html %}</a>
+      <a class="post-icons left" href="{{ site.url | escape }}" title="Voltar para Home"><span>{% include icons/icon-left-arrow.html %}</span>voltar</a>
     </div>
   </div>
 </div>
