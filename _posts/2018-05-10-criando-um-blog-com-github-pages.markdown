@@ -60,7 +60,29 @@ Após ter toda a Parte 1 feita, vamos abrir o terminal no caminho onde se encont
 #### Intalar o Jekyll e o Bundler através do RubyGem:
 **ATENÇÃO:** A intalação do Jekyll e do Bundler só é feita uma vez, não é necessário instalar outra vez quando for criar novos projetos
 
-- No terminal rodar: `sudo gem install jekyll bundler`
+- No terminal rodar: `sudo gem install bundler jekyll`
+
+####ERROR:
+Caso ao rodar o comando acima dê algum erro (em sistemas Linux):
+
+{% highlight markdown%}
+ERROR:  Error installing jekyll:
+ERROR: Failed to build gem native extension.
+{% endhighlight %}
+
+Solucionei intalando o G++ (GNU C++ Compiler)
+pois no ato da instalação o erro se dá por não conseguir compilar um arquivo em C:
+
+{% highlight markdown%}
+fatal error: stdio.h: No such file or directory
+ #include <stdio.h>
+          ^~~~~~~~~
+compilation terminated.
+
+{% endhighlight %}
+
+Após ter instalado o G++ rode novamente o comando que tinha gerado erro:
+`sudo gem install bundler jekyll`
 
 para verificar se o jekyll foi intslado corretamente, rode: `jekyll -v`
 

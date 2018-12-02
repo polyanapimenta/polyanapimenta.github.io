@@ -3,27 +3,116 @@ title: Currículo Profissional
 permalink: /portifolio
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página em Construção!</title>
-    <link rel="stylesheet" href="../assets/main.css">
-    <style media="screen">
-        body {
-          margin-top: 400px;
-        }
-    </style>
+    <title>Polyana Pimenta - Desenvolvedora Backend Java</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/portifolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
-        <div class="wrapper">
-            <p>Página em Construção!</p>
-            <a href="{{ site.url }}">
-                Voltar Para Página Inicial <span class="post-icons">{% include icons/icon-return.html %}</span>
-            </a>
+<body class="container-fluid">
+  <header class="row">
+    <div class="header__content col">
+      <div class="header__language">
+        <ul>
+          <li><a href="#">{% include icons-portifolio/pt-br.html %}</a></li>
+          <li><a href="#">{% include icons-portifolio/en.html %}</a></li>
+        </ul>
+      </div>
+
+      <div class="header__title">
+        <span></span>
+        <h1>Polyana <br>Pimenta</h1>
+        <span></span>
+      </div>
+      
+      <div class="header__social social__icons container-fluid">
+        <ul>
+          <li><a href="http://linkedin.com/in/polyanapimenta/" target="_blank">{% include icons-portifolio/linkedin.html %}</a></li>
+          <li><a href="#">{% include icons-portifolio/whatsapp.html %}</a></li>
+          <li><a href="mailto:polyana.pimenta@gmail.com">{% include icons-portifolio/gmail.html %}</a></li>
+          <li><a href="http://github.com/polyanapimenta" target="_blank"">{% include icons-portifolio/github.html %}</a></li>
+        </ul>
+      </div>
+
+      <div class="header__info">
+        <div>
+          <span>{% include icons-portifolio/target.html %}</span>
+          <p>desenvolvedora backend java</p>
         </div>
+        
+        <div>
+          <span>{% include icons-portifolio/perfil.html %}</span>
+          <p>29/11/1996</p>
+          <span>{% include icons-portifolio/location.html %}</span>
+          <p>Osasco - SP</p>
+        </div>
+      </div>
     </div>
+  </header>
+
+  <nav class="row nav__mobile">
+    <ul class="container-fluid">
+      <li><a href="#home">{% include icons-portifolio/home.html %}</a></li>
+      <li><a href="#projetos">{% include icons-portifolio/projetos.html %}</a></li>
+      <li><a href="#skills">{% include icons-portifolio/skills.html %}</a></li>
+      <li><a href="#experiencia">{% include icons-portifolio/experiencia.html %}</a></li>
+      <li><a href="#formacao">{% include icons-portifolio/formacao.html %}</a></li>
+    </ul>
+  </nav>
+
+    <section class="row">
+      <div id="section__projetos" class="col">
+        <p>projetos</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div id="section__skills" class="col">
+        <p>skills</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div id="section__experiencia" class="col">
+        <p>experiência</p>
+      </div>
+    </section>
+
+    <!-- futura sessão de certificacao -->
+
+    <section class="row">
+      <div id="section__formacao" class="col">
+        <p>formação</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div id="section__idioma" class="col">
+        <p>idioma</p>
+      </div>
+    </section>
+
+    <footer class="row footer__mobile">
+      <div class="social__icons container-fluid">
+          <ul>
+            <li><a href="http://linkedin.com/in/polyanapimenta/" target="_blank">{% include icons-portifolio/linkedin.html %}</a></li>
+            <li><a href="#">{% include icons-portifolio/whatsapp.html %}</a></li>
+            <li><a href="mailto:polyana.pimenta@gmail.com">{% include icons-portifolio/gmail.html %}</a></li>
+            <li><a href="http://github.com/polyanapimenta" target="_blank"">{% include icons-portifolio/github.html %}</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>criadora polyana pimenta<br>&copy; 2018</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

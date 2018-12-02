@@ -1,0 +1,146 @@
+---
+# Somente este arquivo main scss precisa de front matter
+---
+
+@import url('https://fonts.googleapis.com/css?family=Bungee|Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #ecf0f1;
+}
+ul{
+  list-style-type: none;
+}
+body, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header__content {
+  background-image: url("./img-portifolio/full-bkg-completo.png") ;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.header__language {
+  margin-top: 20px;
+  margin-right: 12px;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    flex-direction: row;
+    margin-left: 18px;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.16);
+  }
+  svg {
+    width: 30px;
+  }
+}
+
+.header__title {
+  font-family: 'Bungee', cursive;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 90px 0 50px 0;
+  h1 {
+    text-shadow: 0 3px 6px rgba(0,0,0, 0.16);
+    margin: 0 15px 0 20px;
+    color: #fff;
+  }
+  span {
+    border: 4.5px solid #744FE7;
+    border-radius: 50px;
+  }
+}
+
+.header__social {
+  margin-bottom: 57px;
+}
+.social__icons {
+  ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  li {
+    flex-direction: row;
+  }
+  svg {
+    width: 30px;
+    fill: #fff;
+  }
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+  text-shadow: 0 3px 10px rgba(0,0,0, 0.26);
+  font-size: 18px;
+  
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  p {
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 10px;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.nav__mobile {
+  background-color: #fff;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  box-shadow: 0 2.5px 10px rgba(0,0,0, 0.56);
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  li {
+    margin: 10px 0;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer__mobile {
+  justify-content: center;
+  background-image: url("./img-portifolio/footer-bkg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  p {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .social__icons {
+    // background-image: linear-gradient(to right,#6149E2 , #C65CF9);
+  }
+}
