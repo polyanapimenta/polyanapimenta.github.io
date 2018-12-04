@@ -157,6 +157,16 @@ body, ul {
   } 
 }
 
+#projetos {
+  background-image: linear-gradient(#C65CF9, #6149E2);
+  .section__header {
+    color: #fff;
+    fill: #fff;
+    margin: 30px 0;
+  }
+  margin-bottom: 50px;
+}
+
 .footer__mobile {
   justify-content: center;
   background-image: url("./img-portifolio/footer-bkg.png");
