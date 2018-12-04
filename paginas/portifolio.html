@@ -16,7 +16,7 @@ permalink: /portifolio
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body class="container-fluid">
-  <header class="row">
+  <header id="home" class="row">
     <div class="header__content col">
       <div class="header__language">
         <ul>
@@ -66,29 +66,48 @@ permalink: /portifolio
     </ul>
   </nav>
 
-    <section class="row">
+  <section class="row">
+    <div class="section__info-destaque col">
+      <div class="section__header">
+        <span>{% include icons-portifolio/formacao.html %}</span> <h2>cursando</h2>
+      </div>
+      <p>5º ANO</p>
+      <p>Engenharia de Computação</p>
+      <p>FIAP</p>
+    </div>
+  </section>
+
+    <section id="projetos" class="row">
       <div id="section__projetos" class="col">
-        <p>projetos</p>
+          <div class="section__header">
+            <span>{% include icons-portifolio/projetos.html %}</span> <h2>projetos</h2>
+          </div>
       </div>
     </section>
 
-    <section class="row">
+    <section id="skills" class="row">
       <div id="section__skills" class="col">
-        <p>skills</p>
+          <div class="section__header">
+            <span>{% include icons-portifolio/skills.html %}</span> <h2>skills</h2>
+          </div>
       </div>
     </section>
 
-    <section class="row">
+    <section id="experiencia" class="row">
       <div id="section__experiencia" class="col">
-        <p>experiência</p>
+          <div class="section__header">
+            <span>{% include icons-portifolio/experiencia.html %}</span> <h2>experiência</h2>
+          </div>
       </div>
     </section>
 
     <!-- futura sessão de certificacao -->
 
-    <section class="row">
+    <section id="formacao" class="row">
       <div id="section__formacao" class="col">
-        <p>formação</p>
+          <div class="section__header">
+            <span>{% include icons-portifolio/formacao.html %}</span> <h2>formação</h2>
+          </div>
       </div>
     </section>
 
