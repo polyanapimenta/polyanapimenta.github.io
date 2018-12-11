@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #ecf0f1;
+  background-color: #fff; //#ecf0f1
 }
 ul{
   list-style-type: none;
@@ -23,8 +23,8 @@ body, ul {
 }
 
 .header__language {
-  margin-top: 20px;
-  margin-right: 12px;
+  padding-top: 20px;
+  padding-right: 12px;
   ul {
     display: flex;
     justify-content: flex-end;
@@ -37,6 +37,7 @@ body, ul {
   }
   svg {
     width: 30px;
+    height: 30px;
   }
 }
 
@@ -73,6 +74,7 @@ body, ul {
   }
   svg {
     width: 30px;
+    height: 30px;
     fill: #fff;
   }
 }
@@ -133,9 +135,8 @@ body, ul {
     font-size: 23px;
   }
   p {
-    font-size: 25px;
-    margin-bottom: 60px;
-    margin-left: 75px;
+    font-size: 22.5px;
+    margin-left: 75px !important;
     color: #363636;
     font-weight: 300;
   }
@@ -156,15 +157,84 @@ body, ul {
     margin-right: 15px;
   } 
 }
+section {
+  margin-bottom: 60px;
+}
 
-#projetos {
-  background-image: linear-gradient(#C65CF9, #6149E2);
+.section__projetos {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 105px;
+  width: 100%;
+  background-image: url("./img-portifolio/full-bkg-completo.png") ;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  //background-size: cover;
+
   .section__header {
     color: #fff;
     fill: #fff;
     margin: 30px 0;
   }
-  margin-bottom: 50px;
+
+  .gallery {
+    background: transparent;
+    .gallery-cell {
+      width: 100%;
+      height: 200px;
+      background: rgb(59, 59, 59);
+      counter-increment: gallery-cell;
+    }
+    .gallery-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+    .flickity-page-dots > .dot {
+      background-color: #fff;
+    } 
+  }
+}
+
+.section__skills {
+  .section__header {
+    padding-bottom: 15px;
+  }
+}
+
+div[class^="section"] > p {
+  font-size: 14px;
+  margin: 20px 0 2px 35px;
+  text-transform: uppercase;
+}
+.progress {
+  margin: 0 30px;
+  border-radius: 100px;
+  height: 28px;
+  font-size: 16px;
+  > .progress-bar {
+    background-color: #D79FEF;
+  }
+}
+
+.section__idioma {
+  .section__header {
+    margin-bottom: 40px;
+  }
+  
+  .nivel {
+    display: flex;
+    padding: 0 25px;
+    > p {
+      margin: 0 63px 0 10px;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: capitalize;
+    }
+  }
 }
 
 .footer__mobile {
@@ -173,16 +243,16 @@ body, ul {
   background-repeat: no-repeat;
   background-position: -390px center;
   background-size: cover;
-  padding-top: 90px;
-  
+  padding-top: 80px;
+  height: 300px;
   p {
     color: #fff;
     text-align: center;
     text-transform: capitalize;
-    margin-top: 30px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    letter-spacing: 1.05px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    height: 50px;
   }
   .social__icons {
     padding-top: 30px;
