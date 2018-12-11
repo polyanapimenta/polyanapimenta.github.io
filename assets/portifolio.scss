@@ -52,11 +52,11 @@ body, ul {
     margin: 0 15px 0 20px;
     color: #fff;
     font-size: 48px;
-  }
-  span {
-    border: 4.5px solid rgb(115, 74, 226);
-    border-radius: 50px;
-  }
+  } 
+}
+.separador {
+  border: 4.5px solid rgb(115, 74, 226);
+  border-radius: 50px;
 }
 
 .header__social {
@@ -130,13 +130,18 @@ body, ul {
 }
 
 .section__info-destaque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   p > span {
     font-weight: 700;
-    font-size: 23px;
+    font-size: 23px !important;
   }
   p {
-    font-size: 22.5px;
-    margin-left: 75px !important;
+    font-size: 25px !important;
+    text-transform: capitalize !important;
     color: #363636;
     font-weight: 300;
   }
@@ -220,19 +225,76 @@ div[class^="section"] > p {
   }
 }
 
+.section__formacao {
+  .curso {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 15px 30px;
+
+    svg{
+      height: 30px;
+      width: 30px;
+    }
+    a {
+      color: #000;
+      margin-left: 10px;
+    }
+  }
+}
+
 .section__idioma {
   .section__header {
     margin-bottom: 40px;
   }
-  
   .nivel {
     display: flex;
     padding: 0 25px;
     > p {
-      margin: 0 63px 0 10px;
+      margin: 0 63px 40px 10px;
       font-weight: 300;
       font-size: 14px;
       text-transform: capitalize;
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    margin: 40px 25px 0;
+    a {
+      font-size: 18px;
+      margin: 0 12px;
+      color: #000;
+      text-transform: capitalize;
+    }
+    a:hover {
+      text-decoration: none;
+      margin-left: 15px;
+      transition: 500ms;
+    }
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+    span {
+      border-left: 3.5px solid #D79FEF;
+      height: 22px;
+    }
+  }
+  .regular, .bom, .otimo {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 25px;
+    > span {
+      background-color: #D79FEF;
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      border-radius: 100px;
+    }
+    p {
+      font-size: 17px;
     }
   }
 }

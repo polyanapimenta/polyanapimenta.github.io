@@ -28,9 +28,9 @@ permalink: /portifolio
       </div>
 
       <div class="header__title">
-        <span></span>
+        <span class="separador"></span>
         <h1>Polyana <br>Pimenta</h1>
-        <span></span>
+        <span class="separador"></span>
       </div>
       
       <div class="header__social social__icons container-fluid">
@@ -141,10 +141,19 @@ permalink: /portifolio
 
   <!-- futura sessão de certificacao -->
 
-  <section id="formacao" class="row">
     <div class="section__formacao col">
         <div class="section__header">
-          <span>{% include icons-portifolio/formacao.html %}</span> <h2>formação</h2>
+            <span>{% include icons-portifolio/formacao.html %}</span>
+          <h2>formação</h2>
+        </div>
+        <div class="curso">
+          <h3>Engenharia De Computação</h3>
+          <div class="separador">
+            <p>FIAP - Faculdade de Informática e Administração Paulista</p>
+            <p>Início <span>2015</span> | Formação <span>2019</span></p>
+            {% include icons-portifolio/game.html %}
+            <a href="#">Projetos</a>
+          </div>
         </div>
     </div>
   </section>
@@ -165,7 +174,35 @@ permalink: /portifolio
           <p>intermediário </p>
           <p>avançado</p>
         </div>
-        
+
+        <div class="col">
+          <div class="regular">
+            <span></span>
+            <p>Writing, Speaking</p>
+          </div>
+          
+          <div class="bom">
+            <span></span>
+            <span></span>
+            <p>Reading, Listening</p>
+          </div>
+
+          <div class="otimo">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="link">
+            <span>
+              <a href="https://google.com.br" target="_blanc" class="row">Avaliação de proficiência</a>
+            </span>
+          </div>
+
+          <div class="link">
+            {% include icons-portifolio/download.html %}
+              <a href="https://google.com.br" target="_blanc" class="row">Currículo Impresso</a>
+          </div>
+        </div>
     </div>
   </section>
 
