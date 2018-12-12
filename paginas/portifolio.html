@@ -146,15 +146,42 @@ permalink: /portifolio
             <span>{% include icons-portifolio/formacao.html %}</span>
           <h2>formação</h2>
         </div>
-        <div class="curso">
-          <h3>Engenharia De Computação</h3>
-          <div class="separador">
-            <p>FIAP - Faculdade de Informática e Administração Paulista</p>
-            <p>Início <span>2015</span> | Formação <span>2019</span></p>
-            {% include icons-portifolio/game.html %}
-            <a href="#">Projetos</a>
+
+        <div class="box">
+          <h3 class="box__header">Engenharia De Computação</h3>
+          <div class="box__body">
+            <p>2019</p>
+            <span class="span__delimitador"></span>
+            <div class="box__content">
+              <p>FIAP - Faculdade de Informática e Administração Paulista</p>
+              <p>Início <span>2015</span> | Formação <span>2019</span></p>
+              <div class="box__footer">
+                <a href="#">
+                  {% include icons-portifolio/game.html %}
+                  Projetos
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="box">
+            <h3 class="box__header">Ensino Médio e<br>Técnico em Logística</h3>
+            <div class="box__body">
+              <p>2014</p>
+              <span class="span__delimitador"></span>
+              <div class="box__content">
+                <p>ITB - Instituto Técnico de Barueri Prof. Moacyr D. Sávio Veronezi</p>
+                <p>Início <span>2012</span> | Formação <span>2014</span></p>
+                <div class="box__footer">
+                  <a href="#">
+                    {% include icons-portifolio/game.html %}
+                    TCC
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   </section>
 
