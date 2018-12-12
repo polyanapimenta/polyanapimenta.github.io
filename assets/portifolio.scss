@@ -107,7 +107,7 @@ body, ul {
 }
 
 .nav__mobile {
-  background-color: #fff;
+  background-color: #ecf0f1;
   padding: 0;
   position: fixed;
   bottom: 0;
@@ -226,62 +226,62 @@ div[class^="section"] > p {
 }
 
 .section__formacao {
-  margin-bottom: 60px;
   .section__header {
     margin-bottom: 45px;
   }
 }
 
-.box {
-  margin-bottom: 40px;
-  .box__header {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-    font-weight: 400;
-    text-transform: capitalize;
-  }
-  .box__body {
-    display: flex;
-    justify-content: center;
-    padding: 15px 30px;
 
-    .span__delimitador {
-      margin: 0 10px;
-      border-color: #D79FEF;
-      border-width: 3px;
-    }
-    > p {
-      font-size: 22px;
+.box__header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 2px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.box__body {
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+
+  .span__delimitador {
+    margin: 0 10px;
+    border-color: #D79FEF;
+    border-width: 3px;
+  }
+  > p {
+    font-size: 22px;
+    font-weight: 700;
+    transform: rotate(90deg);
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+  }
+  .box__content {
+    flex-direction: column;
+    p > span {
       font-weight: 700;
-      transform: rotate(90deg);
-      height: 20px;
-      width: 20px;
-      margin-top: 5px;
-      margin-bottom: 0;
-      letter-spacing: 5px;
     }
-    .box__content {
-      flex-direction: column;
-      p > span {
-        font-weight: 700;
+    .box__footer {
+      flex-direction: row;
+      svg{
+        height: 30px;
+        width: 30px;
+        margin-right: 8px;
       }
-      .box__footer {
-        flex-direction: row;
-        svg{
-          height: 30px;
-          width: 30px;
-          margin-right: 8px;
-        }
-        a {
-          color: #000;
-          display: flex;
-          align-items: center;
-        }
+      a {
+        color: #000;
+        display: flex;
+        align-items: center;
       }
     }
   }
 }
+
 
 .section__idioma {
   .section__header {
