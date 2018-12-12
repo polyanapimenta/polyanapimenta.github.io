@@ -163,7 +163,7 @@ body, ul {
   } 
 }
 section {
-  margin-bottom: 60px;
+  padding: 50px 0;
 }
 
 .section__projetos {
@@ -289,9 +289,8 @@ div[class^="section"] > p {
   }
   .nivel {
     display: flex;
-    padding: 0 25px;
+    justify-content: space-around;
     > p {
-      margin: 0 63px 40px 10px;
       font-weight: 300;
       font-size: 14px;
       text-transform: capitalize;
