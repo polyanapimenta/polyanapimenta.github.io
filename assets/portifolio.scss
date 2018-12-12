@@ -231,9 +231,14 @@ div[class^="section"] > p {
   }
   .card-body {
     padding-left: 45px;
+    padding-bottom: 0;
     > span {
       font-weight: 700;
       text-transform: capitalize;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
   .box__body {
